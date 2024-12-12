@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <a href="index.html" id="cheatPage">Cheat Page</a>
+    <a href="index3.html" id="hobbyPage">Hobby</a>
+    <a href="https://www.linkedin.com/in/nesru-abbamilki-372943333/" id="linkedin"><img src="linked.png" alt="linkedin"></a>
+
+    <!-- Navigation Section -->
+    <nav id="nav">
+        <a href="#contact-section" id="contactLink">Contact</a>
+    </nav>
+
+    <main id="main">  </main>
+
+
+    <figure >
+        <video src="breadboard.mp4" id="video" controls></video>
+        <figcaption>Arduino Uno</figcaption>
+    </figure>
+    
+      
+   
+
+        <section id="contact-section">
+            <h2>Contact</h2>
+            <form id="contactForm" onsubmit="sendEmail(event)">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <table>
+                        <tr>
+                            <td><label for="fname">First Name:</label></td>
+                            <td><input type="text" id="fname" placeholder="First Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname">Last Name:</label></td>
+                            <td><input type="text" id="lname" placeholder="Last Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="em">E-mail:</label></td>
+                            <td><input type="email" id="em" placeholder="E-mail" required></td>
+                        </tr>
+                    </table>
+                    <textarea id="message" placeholder="Your Message..." rows="5" cols="50" required></textarea>
+                    <div style="margin-top: 10px;">
+                        <input type="submit" value="Send">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+
+       
+        
+      
+
+<!-- Edit Mode Button -->
+<button id="editModeButton">Enable Edit Mode</button>
+
+<!-- Popup Modal -->
+<div id="codePopup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <h3>Enter Code to Edit Page</h3>
+        <input type="password" id="editCode" placeholder="Enter code">
+        <div class="popup-buttons">
+            <button id="confirmCodeButton">Confirm</button>
+            <button id="cancelPopupButton">Cancel</button>
+        </div>
+    </div>
+</div>
+
+
+        
+    
+
+    <footer id="footer"></footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
